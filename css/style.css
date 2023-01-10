@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #fcf5eb;
+    font-family: Arial;
+}
+
+.container{
+    width: 1090px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+nav .logo, .menu, .download-bettun{
+    width: 33.33%;
+}
+
+nav{
+    padding:  50px 50px 30px 50px;
+}
+
+nav .logo img{
+width: 120px;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+nav .menu ul li {
+    display: inline-block;
+}
+nav  .download-bettun ul li{
+    display: inline-block;
+}
+
+nav .menu ul li a ,
+nav  .download-bettun ul li a{
+    color: #1c1e21;
+    font-size: 16px;
+    line-height: 22px;
+     margin: 0 10px;
+     position: relative;
+     display: block;
+}
+nav  .download-bettun ul li a::after,
+nav .menu ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom:0 ;
+    left: 0;
+    transition: 0.3s;
+
+}nav .menu ul li:hover a::after,
+nav  .download-bettun ul li:hover a::after{
+    width: 100%;
+}
+nav  .download-bettun ul{
+    text-align: right;
+}
+
+.download-bettun-gpn{
+    content: "";
+background-color: #25d366;
+color: #1c1e21;
+padding: 16px 28px;
+font-size: 16px;
+border: 1px solid #1c1e21;
+border-radius: 35px;
+overflow: hidden;
+z-index: 1;
+display: inline-block;
+position: relative;
+}
+.download-bettun-gpn::after{
+    content: "";
+    position: absolute;
+background-color: #111 !important;
+width: 100% !important;
+height: 80px !important;
+border-radius: 50%;
+top: 100%;
+bottom: auto;
+left: 0;
+transform: scale(1);
+z-index: -1;
+
+}
+.download-bettun-gpn:hover{
+    color: aliceblue;
+    z-index: 1;
+}
+.download-bettun-gpn:hover:after{
+    top: 0;
+    transform: scale(1.5);
+}
+nav .download-bettun ul  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+#benner{
+    background-image: url(../img/bagro.png);
+     height: 752px;
+     background-repeat: no-repeat;
+    border-radius: 30px;
+    background-size: cover;
+    width:  calc(100% - 100px);
+    margin: auto;
+}.benner-cnt{
+    width: 30%;
+    color: #ffffff;
+}
+
+#benner .row{
+    align-items: center;
+    height: 600px;
+    
+}
+.benner-cnt h2{
+font-size: 80px;
+line-height: 80px;
+text-align: left;
+
+}
+.benner-cnt p{
+font-size: 18px;
+margin: 15px 0;
+}
+.benner-float-images{
+    position: absolute;
+    display: block;
+}
+
+.cupimg{
+    top: 250px;
+    left: 720px;
+}
+.voicesimg{
+    
+    bottom: 170px;
+    left: 700px;
+}
+.picimg{
+    left: 700px;
+    top: 460px;
+    
+}
+.morningimg{
+    left: 700px;
+    bottom: 350px;
+    
+}
+.loveimg{
+    left: 700px;
+    top: 250px;
+    position: absolute;
+}
+.containerimg img{
+    max-width: 100%;
+}
+.containerimg p{
+    max-width: 100%;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: 800px;
+
+    margin-left: 240px;
+    
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+.font p{
+    font-size: 12px;
+    text-align: center;
+     line-height: 16.08px;
+      margin-left: 900px;
+}
